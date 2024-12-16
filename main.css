@@ -200,7 +200,7 @@ form input{
     align-items: center;
     row-gap: 35%;
     column-gap: 10%;
-    justify-items:end;
+    justify-items:center;
     margin: 0 auto;
     
 }
@@ -225,7 +225,7 @@ form input{
 }
 
 #img-teto h2{
-    width: 420px;
+    max-width: 320px;
     height: 176px;
     background-size: cover;
     background-color: rgba(61, 51, 51, 0.658);
@@ -245,7 +245,7 @@ form input{
 }
 
 #img-connor h2{
-    max-height: 166px;
+    max-height: 176px;
     background-color: rgba(61, 51, 51, 0.658);
     color:  rgb(255, 255, 255);
 }
@@ -322,9 +322,10 @@ form input{
     background-color: orange;
     border-radius: 20%;
     height: 40px;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 360px) and (max-width: 819px) {
+@media screen and (min-width: 360px) and (max-width: 818px) {
 
 
 
@@ -342,7 +343,7 @@ form input{
 
     .menu li{
         
-        display: hidden;
+        display: none;
     }
 
 
@@ -444,6 +445,9 @@ form input{
         
     }
     
+    #img-teto h2{
+        min-width: 420px;
+    }
 
 
 
@@ -523,7 +527,7 @@ form input{
 
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 819px) and (max-width: 1000px) {
 
     .produtos{
         display: grid;
@@ -536,9 +540,16 @@ form input{
         text-align: center;
     }
 
+    #img-teto{
+        width: 420px;
+
+
+    }
 
     
+
     #img-teto h2{
+        min-width: 420px;
         background-size: cover;
         background-color: rgba(61, 51, 51, 0.658);
         color: rgb(255, 255, 255);
@@ -546,7 +557,7 @@ form input{
     
     
     #img-connor h2{
-        max-height: 166px;
+        max-height: 175.99px;
         background-color: rgba(61, 51, 51, 0.658);
         color:  rgb(255, 255, 255);
     }
@@ -581,10 +592,7 @@ form input{
         color:  rgb(255, 255, 255);
     }
     
-    
-    
-    
-    
+
 
     .produtos img{
         
