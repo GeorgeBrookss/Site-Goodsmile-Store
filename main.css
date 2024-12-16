@@ -1,0 +1,605 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+
+article button{
+    width: 200px;
+    height: 30px;
+}
+
+
+
+.hidde-menu{
+    display: none;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: fit-content;
+
+    
+}
+header {
+    background-color: orange;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0 20%;
+    z-index: 1;
+}
+
+header button{
+    background-color: wheat;
+}
+
+header img{
+    width: 500px;
+
+}
+
+header button{
+    width: 140px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: orangered;
+    font-size: 1.5em;
+}
+
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+.menu li{
+    float: left;
+    list-style-type: none;
+    padding: 18px 30px;
+    position: relative;
+    font-size: 1.7em;   
+    padding: 10px;
+    display: block;
+
+}
+
+.menu li:hover{
+    cursor: pointer;
+    border-top: 2px solid white;
+    margin-bottom: 4px;
+
+}
+
+nav .container{
+justify-content: center;
+}
+
+form input{
+    height: 50px;
+    width: 240px;
+    border-top-left-radius: 20%;
+    border-left: none;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-right: none;
+    color: black;
+}
+
+.submenu{
+    border: 2px solid white;
+    display: none;
+    position: absolute;
+    background-color: orange;
+    left: 0;
+    width: 350px;
+    border-top: none;
+    font-size: 0.4em;
+    z-index: 1;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+
+.carousel img:hover{
+    cursor: pointer
+    
+
+}
+
+
+
+.slick-dots{
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.slick-dots button{
+    padding: 7px;
+    border-radius: 100%;
+    background-color: white;
+    font-size: 0;
+
+}
+
+
+
+.slick-dots button:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    margin: 40px 40px;
+}
+
+.about-container img{
+    max-width: 800px;
+    min-width: 300px;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+.title{
+    padding: 10px;
+    background-color: orange;
+    font-size: 2em;
+}
+
+.produto h2{
+    font-size: 2em;
+    padding-left: 140px;
+    text-align: center;
+    padding-bottom: 140px;
+    text-decoration: underline;
+}
+
+.produtos h2{
+    padding-left: 0;
+}
+
+
+.produtos{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 22.5%);
+    align-items: center;
+    row-gap: 35%;
+    column-gap: 10%;
+    justify-items:end;
+    margin: 0 auto;
+    
+}
+
+.produtos a img{
+    max-width: 320px;
+    max-height: 320px;
+    min-width: 320px;
+    min-height: 320px;
+    object-fit: contain;
+}
+
+#img-teto{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/830/181/216/line-grey-background-pink-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 320px;
+    border-top-right-radius: 20% ;
+    max-width: 420px;
+    border-top-left-radius: 20%;
+    
+}
+
+#img-teto h2{
+    width: 420px;
+    height: 176px;
+    background-size: cover;
+    background-color: rgba(61, 51, 51, 0.658);
+    color: rgb(255, 255, 255);
+}
+
+
+#img-connor{
+    background-image: url('https://img.freepik.com/premium-vector/abstract-geometric-banner_105325-107.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 420px;
+    max-height: 320px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+
+}
+
+#img-connor h2{
+    max-height: 166px;
+    background-color: rgba(61, 51, 51, 0.658);
+    color:  rgb(255, 255, 255);
+}
+
+#img-miku{
+    background-image: url('https://img.freepik.com/premium-photo/cyan-background-with-grey-background-generative-ai_455711-2633.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 420px;
+    max-height: 320px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+
+}
+
+#img-miku h2{
+    max-height: 176px;
+    background-color: rgba(61, 51, 51, 0.658);
+    color:  rgb(255, 255, 255);
+}
+
+
+#img-monika{
+    background-image: url('https://images4.alphacoders.com/115/1155174.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 420px;
+    max-height: 320px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+#img-monika h2{
+    max-height: 176px;
+    background-color: rgba(61, 51, 51, 0.658);
+    color:  rgb(255, 255, 255);
+
+}
+
+#img-kuwabara{
+    background-image: url('https://media.istockphoto.com/id/1413666385/photo/sunset-with-orange-clouds-over-the-mountains.jpg?s=612x612&w=0&k=20&c=5yB5-dW0CSANVBUTFJMoUn7M5UEqRtvl-EUFUCStDeM=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 420px;
+    max-height: 320px;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+#img-kuwabara h2{
+    max-height: 176px;
+    background-color: rgba(61, 51, 51, 0.658);
+    color:  rgb(255, 255, 255);
+
+}
+
+#img-jinx{
+    background-image: url('https://preview.redd.it/hiring-looking-for-a-digital-artist-that-can-do-the-jinx-v0-vi7a80e2mcia1.jpg?width=735&format=pjpg&auto=webp&s=20ad128d95b18943875fe590993dec92d2edad53');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 420px;
+    max-height: 320px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+#img-jinx h2{
+    max-height: 176px;
+    background-color: rgba(61, 51, 51, 0.658);
+    color:  rgb(255, 255, 255);
+}
+
+.produtos button{
+    background-color: orange;
+    border-radius: 20%;
+    height: 40px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 819px) {
+
+
+
+    header{
+        margin: 0;
+        padding: 0;        
+        
+    }
+
+
+    .hidde-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu li{
+        
+        display: hidden;
+    }
+
+
+    header img{
+        width: 250px;;
+    }
+
+    header .container{
+        height: fit-content;
+        display: block;
+        text-align: center;
+        max-height: 120px;
+    }
+    
+    form button{
+        height: 20px;
+        font-size: 1em;
+    }
+
+    form input{
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+    }
+    
+    .need-margin{
+        margin-top: 22px;
+    }
+    .produto h2{
+        font-size: 2em;
+        padding-left: 0px;
+        text-align: center;
+        padding-bottom: 140px;
+        text-decoration: underline;
+    }
+
+    form input{
+        height: 30px;
+    }
+    
+    .menu{
+        display: flex;
+        font-size: 0.5em;
+        
+    }
+    .menu li{
+        padding: 2%;
+    }
+
+    .submenu{
+        max-width: fit-content;
+    }
+
+    .about-container{
+        padding: 0;
+        margin: 36px 0;
+        font-size: 0.5em;
+        display: block;
+    }
+
+    .about-container img{
+        width: 70%;
+        display: flex;
+        margin: 0 15%;
+    }
+
+    .produto{
+        margin-bottom: 25px;
+        margin: 20% auto;
+        
+    }
+
+
+    .hidde-menu img{
+        max-width: 40px;
+        padding-top: 20px;
+        margin-top: 17%;
+        
+    }
+    .hidde-menu{
+
+        text-align: center;
+    }
+
+    .produtos a{
+        display: block;
+        margin: 0 0;
+        padding: 0 0;
+        font-size: 0.6em;
+        
+    }
+
+    
+    #img-teto{
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        
+    }
+    
+
+
+
+
+
+
+    .produtos h2{
+        padding-bottom: 0;
+    }
+
+    .produto a img{
+        
+        align-items: center;
+        text-align: center;
+        min-width: 180px;
+        min-height: 180px ;
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    #img-monika{
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    #img-connor{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    
+    #img-miku{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+    
+    #img-jinx{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+
+    #img-kuwabara{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    
+
+    .produtos{
+        display: block;
+        
+    
+    }
+
+
+    
+#img-teto h2{
+    height: 66px;
+
+}
+
+
+
+
+
+}
+
+@media screen and (min-width: 820px) {
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        margin: 0 auto;
+    }
+    
+    form{
+        text-align: center;
+    }
+
+
+    
+    #img-teto h2{
+        background-size: cover;
+        background-color: rgba(61, 51, 51, 0.658);
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    #img-connor h2{
+        max-height: 166px;
+        background-color: rgba(61, 51, 51, 0.658);
+        color:  rgb(255, 255, 255);
+    }
+    
+    
+    #img-miku h2{
+        max-height: 176px;
+        background-color: rgba(61, 51, 51, 0.658);
+        color:  rgb(255, 255, 255);
+    }
+    
+    
+    #img-monika h2{
+        max-height: 176px;
+        background-color: rgba(61, 51, 51, 0.658);
+        color:  rgb(255, 255, 255);
+    
+    }
+    
+    
+    #img-kuwabara h2{
+        max-height: 176px;
+        background-color: rgba(61, 51, 51, 0.658);
+        color:  rgb(255, 255, 255);
+    
+    }
+    
+    
+    #img-jinx h2{
+        max-height: 176px;
+        background-color: rgba(61, 51, 51, 0.658);
+        color:  rgb(255, 255, 255);
+    }
+    
+    
+    
+    
+    
+
+    .produtos img{
+        
+        max-width: 420px;
+        max-height: 420px;
+        min-width: 420px;
+        min-height: 420px;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    
+    .produto{
+        justify-self: center;
+    }
+    .produto h2{
+        padding-left: 0;
+    }
+}
