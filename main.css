@@ -9,7 +9,7 @@
 
 
 .container{
-    max-width: 1024px;
+    max-width: 2024px;
     margin: 0 auto;
 }
 
@@ -196,10 +196,10 @@ form input{
 .produtos{
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(4, 22.5%);
+    grid-template-columns: repeat(4, 21.25%);
     align-items: center;
     row-gap: 35%;
-    column-gap: 10%;
+    column-gap: 5%;
     justify-items:center;
     margin: 0 auto;
     
@@ -225,7 +225,7 @@ form input{
 }
 
 #img-teto h2{
-    max-width: 320px;
+    max-width: 420px;
     height: 176px;
     background-size: cover;
     background-color: rgba(61, 51, 51, 0.658);
@@ -325,7 +325,7 @@ form input{
     cursor: pointer;
 }
 
-@media screen and (min-width: 360px) and (max-width: 818px) {
+@media screen and (min-width: 360px) and (max-width: 640px) {
 
 
 
@@ -370,15 +370,11 @@ form input{
     }
     
     .need-margin{
-        margin-top: 22px;
+        margin-top: 0px;
+        
     }
-    .produto h2{
-        font-size: 2em;
-        padding-left: 0px;
-        text-align: center;
-        padding-bottom: 140px;
-        text-decoration: underline;
-    }
+
+
 
     form input{
         height: 30px;
@@ -411,7 +407,6 @@ form input{
     }
 
     .produto{
-        margin-bottom: 25px;
         margin: 20% auto;
         
     }
@@ -430,23 +425,20 @@ form input{
 
     .produtos a{
         display: block;
-        margin: 0 0;
-        padding: 0 0;
         font-size: 0.6em;
         
     }
 
     
     #img-teto{
-        height: 100%;
-        width: 100%;
+        
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         
     }
     
     #img-teto h2{
-        min-width: 420px;
+        min-width: 100%;
     }
 
 
@@ -454,8 +446,10 @@ form input{
 
 
 
-    .produtos h2{
-        padding-bottom: 0;
+    .produto h2{
+        height: 0;
+        padding-left: 0;
+        margin-bottom: 0;
     }
 
     .produto a img{
@@ -514,7 +508,6 @@ form input{
     
     }
 
-
     
 #img-teto h2{
     height: 66px;
@@ -522,92 +515,106 @@ form input{
 }
 
 
-
-
-
 }
 
-@media screen and (min-width: 819px) and (max-width: 1000px) {
+@media screen and (min-width: 641px) and (max-width: 1023px) {
 
-    .produtos{
-        display: grid;
-        grid-template-columns: repeat(2, 49%);
-        column-gap: 2%;
-        margin: 0 auto;
-    }
+
     
-    form{
+    header{
+        margin: 0;
+        padding: 0;        
+        
+    }
+
+
+    .hidde-menu{
+        display: block;
+        cursor: pointer;
         text-align: center;
     }
 
-    #img-teto{
-        width: 420px;
-
-
-    }
-
-    
-
-    #img-teto h2{
-        min-width: 420px;
-        background-size: cover;
-        background-color: rgba(61, 51, 51, 0.658);
-        color: rgb(255, 255, 255);
-    }
-    
-    
-    #img-connor h2{
-        max-height: 175.99px;
-        background-color: rgba(61, 51, 51, 0.658);
-        color:  rgb(255, 255, 255);
-    }
-    
-    
-    #img-miku h2{
-        max-height: 176px;
-        background-color: rgba(61, 51, 51, 0.658);
-        color:  rgb(255, 255, 255);
-    }
-    
-    
-    #img-monika h2{
-        max-height: 176px;
-        background-color: rgba(61, 51, 51, 0.658);
-        color:  rgb(255, 255, 255);
-    
-    }
-    
-    
-    #img-kuwabara h2{
-        max-height: 176px;
-        background-color: rgba(61, 51, 51, 0.658);
-        color:  rgb(255, 255, 255);
-    
-    }
-    
-    
-    #img-jinx h2{
-        max-height: 176px;
-        background-color: rgba(61, 51, 51, 0.658);
-        color:  rgb(255, 255, 255);
-    }
-    
-
-
-    .produtos img{
-        
-        max-width: 420px;
-        max-height: 420px;
-        min-width: 420px;
-        min-height: 420px;
-        margin: 0 0;
+    .hidde-menu img{
+        max-width: 70px;
+        margin-top: 120px;
         padding: 0 0;
+
     }
-    
-    .produto{
-        justify-self: center;
+
+    .menu li{
+        
+        display: none;
     }
+
     .produto h2{
         padding-left: 0;
     }
+
+
+    header img{
+        width: 250px;;
+    }
+
+    header .container{
+        height: fit-content;
+        display: block;
+        text-align: center;
+        max-height: 120px;
+    }
+    
+    form button{
+        height: 30px;
+        font-size: 1em;
+    }
+
+    form input{
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+        width: 150px;
+        height: 50px;
+    }
+    
+
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    margin: 0 auto;
 }
+
+form{
+    text-align: center;
+}
+
+#img-teto{
+    width: 320px;
+    justify-self: center;
+
+
+}
+
+#img-connor{
+    width: 320px;
+}
+
+#img-miku{
+    width: 320px;
+}
+
+#img-monika{
+    width: 320px;
+}
+
+#img-kuwabara{
+    width: 320px;
+}
+
+#img-jinx{
+    width: 320px;
+}
+
+
+}
+
